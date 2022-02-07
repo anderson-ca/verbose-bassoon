@@ -16,3 +16,21 @@
     border: solid 1px purple;
     flex-basis: 75%;
 }
+
+@media screen and (max-width: 480px) {
+    .nav {
+        border: solid 2px rgb(223, 5, 157);
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .nav {
+        border: solid 2px rgb(223, 5, 157);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav {
+        border: solid 2px rgb(223, 5, 157);
+    }
+}
