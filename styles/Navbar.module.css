@@ -1,0 +1,18 @@
+.nav {
+    width: 100vw;
+    max-width: 1200px;
+    border: solid 2px blue;
+}
+
+.ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.li:first-child {
+    border: solid 1px purple;
+    flex-basis: 75%;
+}
