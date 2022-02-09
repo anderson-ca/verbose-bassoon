@@ -16,16 +16,6 @@ const Navbar = () => {
     return (
         <div className={`${styles.nav}`}>
 
-            <div
-                onClick={handleClick}
-                className={`${styles.mobile_nav_toggle}`}
-                aria-controls='primary-navigation'
-                aria-expanded='false'
-            >
-                {
-                    click ? <FaTimes /> : <GiHamburgerMenu />
-                }
-            </div>
             <ul id='primary-navigation' className={styles.click ? styles.nav_menu : `${styles.nav_menu} ${styles.active}`}>
                 <li className={`${styles.menu_item}`}>
                     <Link href='/' passHref>
@@ -63,6 +53,16 @@ const Navbar = () => {
                     </Link>
                 </li>
             </ul>
+            <div
+                onClick={handleClick}
+                className={`${styles.mobile_nav_toggle}`}
+                aria-controls='primary-navigation'
+                aria-expanded='false'
+            >
+                {
+                    click ? <FaTimes /> : <GiHamburgerMenu />
+                }
+            </div>
         </div>
     );
 };
