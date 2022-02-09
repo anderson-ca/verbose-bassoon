@@ -7,6 +7,7 @@
     --secondary-font: 'Josefin Sans', sans-serif;
     --black: #17202A;
     --white: #EAECEE;
+    --pink: #E791B7;
 }
 
 html {
@@ -44,7 +45,7 @@ a {
 }
 
 a:hover {
-    color: var(--link-hover-color);
+    color: var(--pink);
 }
 
 .imageWrapper {

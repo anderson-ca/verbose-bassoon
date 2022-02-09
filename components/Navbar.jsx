@@ -15,16 +15,25 @@ const Navbar = () => {
 
     return (
         <div className={`${styles.nav}`}>
-            <div className={`${styles.image_wrapper}`}>
-                <Image src={nav_logo} height={'60%'} width={'60%'} alt='baking glove - navigation logo' />
-            </div>
+            <Link href='/' passHref>
+                <a className={`${styles.header_logo}`}>
+                    <span>
+                        <div className={`${styles.image_wrapper}`}>
+                            <Image src={nav_logo} height={'60%'} width={'60%'} alt='baking glove - navigation logo' />
+                        </div>
+                    </span>
+                    <span>
+                        <h1>Cupcakery</h1>
+                    </span>
+                </a>
+            </Link>
             <div
                 onClick={handleClick}
                 className={`${styles.mobile_nav_toggle}`}
                 aria-controls='primary-navigation'
                 aria-expanded='false'
             >
-                             {
+                {
                     click ? <FaTimes /> : <GiHamburgerMenu />
                 }
             </div>
