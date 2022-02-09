@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,200;1,100&display=swap');
 :root {
-    --bg-color: #47A025;
     --font-size: 1.5rem;
-    --primary-color: #EDF4CD;
-    --secondary-color: #0F1104;
-    --mono: 'Oxygen mono', monospace;
     --link-color: #462044;
     --link-hover-color: #8C4088;
+    --primary-font: 'Amatic SC', cursive;
+    --secondary-font: 'Josefin Sans', sans-serif;
+    --black: #17202A;
+    --white: #EAECEE;
 }
 
 html {
@@ -22,10 +23,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: var(--mono);
+    font-family: var(--primary-font);
     font-size: var(--font-size);
-    color: var(--primary-color);
-    background-color: var(--bg-color)
+    color: var(--black);
+    background-color: var(--white)
 }
 
 h1,
@@ -38,7 +39,7 @@ ul {
 }
 
 a {
-    color: var(--link-color);
+    color: var(--black);
     text-decoration: none;
 }
 
