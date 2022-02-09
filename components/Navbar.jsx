@@ -15,18 +15,7 @@ const Navbar = () => {
 
     return (
         <div className={`${styles.nav}`}>
-            <Link href='/' passHref>
-                <a className={`${styles.header_logo}`}>
-                    <span>
-                        <div className={`${styles.image_wrapper}`}>
-                            <Image src={nav_logo} height={'60%'} width={'60%'} alt='baking glove - navigation logo' />
-                        </div>
-                    </span>
-                    <span>
-                        <h1>Cupcakery</h1>
-                    </span>
-                </a>
-            </Link>
+
             <div
                 onClick={handleClick}
                 className={`${styles.mobile_nav_toggle}`}
@@ -37,22 +26,36 @@ const Navbar = () => {
                     click ? <FaTimes /> : <GiHamburgerMenu />
                 }
             </div>
-            <ul id='primary-navigation' className={styles.click ? styles.menu : `${styles.menu} ${styles.active}`}>
-                <li className={`${styles.item}`}>
+            <ul id='primary-navigation' className={styles.click ? styles.nav_menu : `${styles.nav_menu} ${styles.active}`}>
+                <li className={`${styles.menu_item}`}>
+                    <Link href='/' passHref>
+                        <a className={`${styles.header_logo}`}>
+                            <span>
+                                <div className={`${styles.image_wrapper}`}>
+                                    <Image src={nav_logo} height={'60%'} width={'60%'} alt='baking glove - navigation logo' />
+                                </div>
+                            </span>
+                            <span>
+                                <h1>Cupcakery</h1>
+                            </span>
+                        </a>
+                    </Link>
+                </li>
+                <li className={`${styles.menu_item}`}>
                     <Link href='/' passHref>
                         <a>
                             Menu
                         </a>
                     </Link>
                 </li>
-                <li className={`${styles.item}`}>
+                <li className={`${styles.menu_item}`}>
                     <Link href='/' passHref>
                         <a>
                             About
                         </a>
                     </Link>
                 </li>
-                <li className={`${styles.item}`}>
+                <li className={`${styles.menu_item}`}>
                     <Link href='/' passHref>
                         <a>
                             Locations
