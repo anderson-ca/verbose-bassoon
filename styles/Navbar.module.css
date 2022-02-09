@@ -32,27 +32,21 @@
 
 @media screen and (min-width: 561px) and (max-width: 860px) {
     .nav {
-        border: solid 2px rgb(5, 27, 223);
+        /* border: solid 2px rgb(5, 27, 223); */
         width: 100vw;
+        text-align: center;
+        padding: 1.2rem 0 1rem 0;
     }
     .nav_menu {
-        border: solid 1px red;
-        display: flex;
-    }
-    /* .nav_menu {
+        /* border: solid 1px red; */
         display: flex;
         flex-flow: row wrap;
-        align-items: center;
         justify-content: center;
         gap: 2rem;
     }
-    .li {
-        /* border: solid 1px purple; */
-    /* text-align: center;
-    }
-    .li:first-child {
+    .menu_item:first-child {
         flex-basis: 100%;
-    } */
+    }
 }
 
 @media screen and (min-width: 861px) {
