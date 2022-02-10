@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <div className={`${styles.nav}`}>
 
-            <ul id='primary-navigation' className={styles.click ? styles.nav_menu : `${styles.nav_menu} ${styles.active}`}>
+            <ul id='primary-navigation' className={click ? styles.nav_menu : `${styles.nav_menu} ${styles.active}`}>
                 <li className={`${styles.menu_item}`}>
                     <Link href='/' passHref>
                         <a className={`${styles.header_logo}`}>
@@ -60,7 +60,7 @@ const Navbar = () => {
                 aria-expanded='false'
             >
                 {
-                    click ? <FaTimes /> : <GiHamburgerMenu />
+                    click ? <GiHamburgerMenu /> : <FaTimes />
                 }
             </div>
         </div>

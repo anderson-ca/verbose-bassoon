@@ -5,13 +5,15 @@
 @media screen and (max-width: 560px) {
     .nav {
         border: solid 1px rgb(0, 26, 255);
+        background: purple;
         position: fixed;
         width: 100vw;
     }
     .nav_menu {
         border: solid 1px rgb(60, 255, 0);
+        background: pink;
         padding: 5px;
-        padding-top: 4.3rem;
+        padding-top: 4.7rem;
         text-align: center;
         position: fixed;
         inset: 0 0 0 30%;
@@ -22,6 +24,9 @@
         font-weight: 900;
         justify-content: flex-start;
         align-items: space-around;
+        transform: translateX(100%);
+        transition-property: transform;
+        transition-duration: 400ms;
     }
     .menu_item {
         border: solid 1px purple;
@@ -44,6 +49,10 @@
         top: 1.5rem;
         right: 1.5rem;
         z-index: 999;
+    }
+    .active {
+        transform: translateX(0%);
+        transition-duration: 400ms;
     }
     /* .nav {
         border: solid 2px rgb(247, 2, 173);
