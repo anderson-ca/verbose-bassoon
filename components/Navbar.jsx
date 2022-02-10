@@ -60,7 +60,7 @@ const Navbar = () => {
                 aria-expanded='false'
             >
                 {
-                    click ? <GiHamburgerMenu /> : <FaTimes />
+                    click ? <RiCake3Line /> : <FaTimes />
                 }
             </div>
         </div>
