@@ -39,7 +39,8 @@
         justify-content: center;
     }
     .menu_item:hover {
-        background: rgba(255, 192, 203, 0.795);
+        background: rgba(247, 220, 224, 0.795);
+        transform: translateY(0.2em);
     }
     .menu_item:first-child {
         display: none;
