@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/Navbar.module.css';
 import { RiCake3Line } from 'react-icons/ri';
-import { FaTimes, FaTimesCircle } from 'react-icons/fa';
+import { FaRegTimesCircle } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import nav_logo from '../public/muffin.png';
 import Link from 'next/link';
@@ -60,7 +60,7 @@ const Navbar = () => {
                 aria-expanded='false'
             >
                 {
-                    click ? <RiCake3Line /> : <FaTimesCircle />
+                    click ? <RiCake3Line /> : <FaRegTimesCircle />
                 }
             </div>
         </div>
