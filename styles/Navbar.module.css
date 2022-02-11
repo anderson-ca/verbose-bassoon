@@ -12,7 +12,8 @@
     }
     .nav_menu {
         /* border: solid 1px rgb(60, 255, 0); */
-        background: rgba(255, 192, 203, 0.637);
+        border-left: solid 1px #ad909dc0;
+        background: rgba(255, 192, 203, 0.815);
         padding: 50% 3rem 0 3rem;
         text-align: center;
         position: fixed;

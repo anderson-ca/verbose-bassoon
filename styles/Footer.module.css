@@ -1,0 +1,29 @@
+.footer {
+    text-align: center;
+    /* border: solid red 2px; */
+    background: #E393B5;
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.footer p {
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+}
+
+.social_media {
+    margin: 5vh 0;
+    /* border: solid 1px purple; */
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social_media a {
+    color: var(--white);
+}

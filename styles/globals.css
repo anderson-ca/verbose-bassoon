@@ -6,8 +6,9 @@
     --primary-font: 'Amatic SC', cursive;
     --secondary-font: 'Josefin Sans', sans-serif;
     --black: #17202A;
-    --white: #97eaff;
+    --blue: #97eaff;
     --pink: #E791B7;
+    --white: rgb(217, 234, 238);
 }
 
 html {
@@ -26,8 +27,8 @@ body {
     padding: 0;
     font-family: var(--primary-font);
     font-size: var(--font-size);
-    color: var(--black);
-    background-color: var(--white)
+    color: var(--white);
+    background-color: var(--blue)
 }
 
 h1,
