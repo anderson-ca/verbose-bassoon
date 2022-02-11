@@ -55,7 +55,7 @@ const Navbar = () => {
             </ul>
             <div
                 onClick={handleClick}
-                className={`${styles.mobile_nav_toggle}`}
+                className={click ? styles.mobile_nav_toggle: `${styles.mobile_nav_toggle} ${styles.active}`}
                 aria-controls='primary-navigation'
                 aria-expanded='false'
             >
