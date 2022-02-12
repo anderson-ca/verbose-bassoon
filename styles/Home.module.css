@@ -1,3 +1,36 @@
 .home {
-    height: 90vh
+    width: 100vw;
+    max-width: 1200px;
+    border: solid 1px red;
+    height: 90vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.logo_wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border: solid 1px rgb(4, 255, 4)
+}
+
+
+/* logo animation */
+
+.line {
+    width: 100%;
+    border: solid 1px yellow;
+}
+
+.left,
+.right {
+    width: 50vw;
+    border: solid 1px rgb(51, 255, 0);
+}
+
+.left {
+    color: purple;
 }
