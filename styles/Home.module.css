@@ -14,6 +14,7 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
+    align-items: center;
     border: solid 1px rgb(4, 255, 4)
 }
 
@@ -32,16 +33,30 @@
 }
 
 .left {
-    color: purple;
+    background-color: purple;
     transform: skew(0, -15deg);
 }
 
 .right {
-    color: black;
+    background-color: rgb(230, 8, 238);
     transform: skew(0deg, 15deg);
 }
 
 .left .content {
     text-align: center;
     width: 100%;
+}
+
+.right .content {
+    width: 100%;
+    text-align: center;
+    transform: translate(-30%);
+}
+
+.span {
+    display: inline-block;
+    font-size: 2vw;
+    text-transform: uppercase;
+    line-height: .3;
+    transition: ease-out .6s;
 }

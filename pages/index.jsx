@@ -1,8 +1,40 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+
+  const [slow, setSlow] = useState([]);
+  const [fast, setFast] = useState([]);
+  
+
+  useEffect(() => {
+    setSlow([...document.getElementsByClassName(`${styles.slow}`)]);
+    setFast([...document.getElementsByClassName(`${styles.slow}`)]);
+
+  }, [])
+
+  useEffect(() => {
+    handleMouseMove;
+  }, [slow, fast])
+
+  const handleMouseMove = (e) => {
+    let normalizedPosition = e.pageX / (window.innerWidth / 2) -1;
+    let speedSlow = 100 * normalizedPosition;
+    let speedFast = 200 * normalizedPosition;
+    // console.log(speedSlow, speedFast, normalizedPosition, slow);
+
+    slow.forEach((element) => {
+      element.style.transform = `translate(${speedSlow}px)`;
+    });
+
+    fast.forEach((element) => {
+      element.style.transform = `translate(${speedFast}px)`;
+    });
+  }
+
+  
   return (
     <div className={styles.home}>
       <Head>
@@ -13,38 +45,38 @@ export default function Home() {
       <div className={styles.logo_wrapper}>
         {/* logo animation */}
         <div className={styles.line}>
-          <div className={styles.right}>
+          <div className={styles.left}>
             <div className={styles.content}>
-              <span>THINK</span>
+              <span className={`${styles.span} ${styles.slow}`}>THINK</span>
             </div>
           </div>
           <div className={styles.right}>
             <div className={styles.content}>
-              <span>ONCE</span>
+              <span className={`${styles.span} ${styles.slow}`}>ONCE</span>
             </div>
           </div>
         </div>
         <div className={styles.line}>
           <div className={styles.left}>
             <div className={styles.content}>
-              <span>THINK</span>
+              <span className={`${styles.span} ${styles.slow}`}>THINK</span>
             </div>
           </div>
           <div className={styles.right}>
             <div className={styles.content}>
-              <span>TWICE</span>
+              <span className={`${styles.span} ${styles.slow}`}>TWICE</span>
             </div>
           </div>
         </div>
         <div className={styles.line}>
           <div className={styles.left}>
             <div className={styles.content}>
-              <span>THINK</span>
+              <span className={`${styles.span} ${styles.fast}`}>THINK</span>
             </div>
           </div>
           <div className={styles.right}>
             <div className={styles.content}>
-              <span>DELICIOUS</span>
+              <span className={`${styles.span} ${styles.fast}`}>DELICIOUS</span>
             </div>
           </div>
         </div>
