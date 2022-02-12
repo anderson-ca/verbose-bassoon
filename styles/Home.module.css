@@ -33,4 +33,15 @@
 
 .left {
     color: purple;
+    transform: skew(0, -15deg);
+}
+
+.right {
+    color: black;
+    transform: skew(0deg, 15deg);
+}
+
+.left .content {
+    text-align: center;
+    width: 100%;
 }
