@@ -28,18 +28,18 @@
 
 .left,
 .right {
-    width: 50vw;
+    width: 100%;
     border: solid 1px rgb(51, 255, 0);
 }
 
 .left {
     background-color: purple;
-    transform: skew(0, -15deg);
+    transform: skew(0, 12deg);
 }
 
 .right {
     background-color: rgb(230, 8, 238);
-    transform: skew(0deg, 15deg);
+    transform: skew(0deg, -12deg);
 }
 
 .left .content {
