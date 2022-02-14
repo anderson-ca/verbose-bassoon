@@ -84,6 +84,9 @@ a:hover {
 
 .content {
     border: solid 1px black;
+    width: 100%;
+    text-align: center;
+    /* transform: translateX(50px); */
 }
 
 .left,
