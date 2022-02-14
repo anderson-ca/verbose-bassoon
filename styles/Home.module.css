@@ -1,4 +1,4 @@
-.home {
+/* .home {
     width: 100vw;
     max-width: 1200px;
     border: solid 1px red;
@@ -21,7 +21,8 @@
 
 /* logo animation */
 
-.line {
+
+/* .line {
     width: 100%;
     border: solid 1px yellow;
 }
@@ -60,3 +61,5 @@
     line-height: .3;
     transition: ease-out .6s;
 }
+
+*/
