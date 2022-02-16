@@ -13,34 +13,3 @@ const WavesDivider = () => {
 }
 
 export default WavesDivider
-
-
-{/* <div ref={ref} className="animated-text-wrapper">
-        <div className="content left">
-          <span className="l move">Think</span>
-        </div>
-        <div className="content right">
-          <span className="r move">Once</span>
-          <span className="r move">Twice</span>
-          <span className="r move">Delicious</span>
-        </div> */}
-        {/* <div className="line left">
-          <div className="content slow">
-            <span>Think</span>
-          </div>
-        </div>
-        <div className="line right">
-          <div className="content fast">
-            <span>Once</span>
-          </div>
-        </div>
-        <div className="line right">
-          <div className="content fast">
-            <span>Twice</span>
-          </div>
-        </div>
-        <div className="line right">
-          <div className="content fast">
-            <span>Delicious</span>
-          </div>
-        </div> */}

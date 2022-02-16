@@ -8,11 +8,11 @@ import HeroSection from '../components/HeroSection';
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      {/* <Navbar /> */}
+      <Navbar />
       <HeroSection />
       <Component {...pageProps} />
-      {/* <WavesDivider />
-      <Footer /> */}
+      {/* <WavesDivider /> */}
+      <Footer />
     </Layout>
   )
 }

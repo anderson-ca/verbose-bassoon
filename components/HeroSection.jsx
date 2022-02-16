@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from 'react';
 const HeroSection = () => {
   const ref = useRef(null);
 
-  const [animatedText, setAnimatedText] = useState([]);
   const [slow, setSlow] = useState([]);
   const [fast, setFast] = useState([]);
   const [mouseX, setMouseX] = useState(0)
@@ -21,7 +20,7 @@ const HeroSection = () => {
   useEffect(() => {
 
     // normalize mouse movement
-    let normalizedPosition = mouseX / (window.innerWidth/2) - 1;
+    let normalizedPosition = mouseX / (window.innerWidth/2) - .9;
     let speedSlow = 100 * normalizedPosition;
     let speedFast = 200 * normalizedPosition;
 
@@ -45,40 +44,19 @@ const HeroSection = () => {
             </div>
           </div><div className={`${styles.right}`}>
             <div className={`${styles.content}`}>
-              <span className={`${styles.spanSlow} ${styles.span}`}>experience</span>
+              <span className={`${styles.spanSlow} ${styles.span}`}>without</span>
             </div>
           </div>
         </div>
         <div className={`${styles.line}`}>
           <div className={`${styles.left}`}>
             <div className={`${styles.content}`}>
-              <span className={`${styles.spanSlow} ${styles.span}`}>the flavor</span>
-            </div>
-          </div><div className={`${styles.right}`}>
-            <div className={`${styles.content}`}>
-              <span className={`${styles.spanSlow} ${styles.span}`}>the flavor</span>
+              <span className={`${styles.spanSlow} ${styles.span}`}>Flavor</span>
             </div>
           </div>
-        </div>
-        <div className={`${styles.line}`}>
-          <div className={`${styles.left}`}>
+          <div className={`${styles.right}`}>
             <div className={`${styles.content}`}>
-              <span className={`${styles.spanFast} ${styles.span}`}>you</span>
-            </div>
-          </div><div className={`${styles.right}`}>
-            <div className={`${styles.content}`}>
-              <span className={`${styles.spanFast} ${styles.span}`}>you</span>
-            </div>
-          </div>
-        </div>
-        <div className={`${styles.line}`}>
-          <div className={`${styles.left}`}>
-            <div className={`${styles.content}`}>
-              <span className={`${styles.spanSlow} ${styles.span}`}>desire</span>
-            </div>
-          </div><div className={`${styles.right}`}>
-            <div className={`${styles.content}`}>
-              <span className={`${styles.spanSlow} ${styles.span}`}>desire</span>
+              <span className={`${styles.spanSlow} ${styles.span}`}>compromise</span>
             </div>
           </div>
         </div>
