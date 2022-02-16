@@ -59,21 +59,23 @@ a:hover {
 /* text animation */
 
 
-/* /* .hero-section {
-    border: solid 3px pink;
+/* .hero-section {
+    border: solid 2px rgb(241, 7, 7);
+    overflow: hidden;
     height: 100vh;
     width: 100vw;
     padding: 4%;
 } */
 
-.animated-text-wrapper {
-    /* border: red solid 3px; */
+
+/* .animated-text-wrapper {
+    border: red solid 3px;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     overflow: hidden;
     padding: 35vh 0 0 0;
-}
+} */
 
 .line {
     /* overflow: hidden; */
