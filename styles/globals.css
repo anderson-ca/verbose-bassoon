@@ -6,7 +6,7 @@
     --primary-font: 'Dancing Script', cursive;
     --secondary-font: 'Anton', sans-serif;
     --tertiary-font: 'Shizuru', cursive;
-    --black: #527d88;
+    --dark-blue: #087996;
     --blue: #97eaff;
     --pink: #E791B7;
     --white: rgb(217, 234, 238);
@@ -47,7 +47,9 @@ body {
     font-family: var(--primary-font);
     font-size: var(--font-size);
     color: var(--white);
-    background-color: var(--blue)
+    /* background-color: var(--blue); */
+    background: var(--blue);
+    /* background: linear-gradient(210deg, rgba(151, 234, 255, 1) 6%, rgba(85, 201, 230, 1) 54%, rgba(48, 166, 196, 1) 65%, rgba(24, 139, 168, 1) 75%, rgba(8, 121, 150, 1) 92%); */
 }
 
 h1,
@@ -60,7 +62,7 @@ ul {
 }
 
 a {
-    color: var(--black);
+    color: var(--dark-blue);
     text-decoration: none;
 }
 

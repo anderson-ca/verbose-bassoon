@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
           </div><div className={`${styles.right}`}>
             <div className={`${styles.content}`}>
-              <span className={`${styles.spanSlow} ${styles.span}`}>without</span>
+              <span className={`${styles.spanSlow} ${styles.span}`}>but</span>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
           <div className={`${styles.right}`}>
             <div className={`${styles.content}`}>
-              <span className={`${styles.spanSlow} ${styles.span}`}>compromise</span>
+              <span className={`${styles.spanSlow} ${styles.span}`}>healthy</span>
             </div>
           </div>
         </div>
