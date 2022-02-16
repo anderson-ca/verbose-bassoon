@@ -37,6 +37,7 @@
         font-family: var(--primary-font);
         color: var(--pink);
         transform: skew(0deg, -18deg);
+        /* transition-duration: 400ms; */
     }
     .right {
         color: var(--black);

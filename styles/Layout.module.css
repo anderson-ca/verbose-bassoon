@@ -4,8 +4,14 @@
     width: 100vw;
     overflow-x: hidden;
     display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
     /*    */
     /* flex-flow: column nowrap; */
     /* justify-content: flex-start; */
     /* align-items: center; */
+}
+
+.my-grid {
+    border: solid 3px red;
 }
