@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,200;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&display=swap');
 :root {
     --font-size: 1.5rem;
     --link-color: #462044;
     --link-hover-color: #8C4088;
-    --primary-font: 'Amatic SC', cursive;
-    --secondary-font: 'Josefin Sans', sans-serif;
+    --primary-font: 'Dancing Script', cursive;
+    --secondary-font: 'Anton', sans-serif;
     --black: #17202A;
     --blue: #97eaff;
     --pink: #E791B7;
@@ -58,65 +58,64 @@ a:hover {
 
 /* text animation */
 
+
+/* /* .hero-section {
+    border: solid 3px pink;
+    height: 100vh;
+    width: 100vw;
+    padding: 4%;
+} */
+
 .animated-text-wrapper {
-    /* margin: 10% 20%; */
-    border: red solid 3px;
+    /* border: red solid 3px; */
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
+    padding: 35vh 0 0 0;
 }
 
 .line {
-    border: solid pink 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* width: 100vw;
-    height: 10vh; */
-    /* flex-basis: 100% */
-}
-
-.content {
-    border: solid 1px black;
-    width: 100%;
-    text-align: center;
-    /* transform: translateX(50px); */
+    /* overflow: hidden; */
+    /* border: 1px solid red; */
+    width: 100vw;
+    /* text-align: center; */
 }
 
 .left,
 .right {
-    /* width: 50vw;
+    width: 50vw;
     overflow: hidden;
-    display: inline-block; */
+    display: inline-block;
 }
 
 .left {
-    background-color: rgb(253, 6, 47);
-    width: 50%;
-    flex-basis: 100%
-    /* transform: skew(0deg, -15deg); */
+    font-family: var(--primary-font);
+    color: pink;
+    transform: skew(0deg, -15deg);
 }
 
 .right {
-    color: black;
-    background-color: rgb(60, 6, 253);
-    flex-basis: 33.3%;
-    width: 50%;
-    /* transform: skew(0deg, 15deg); */
+    color: #527d88;
+    transform: skew(0deg, 15deg);
 }
 
+.left .content {
+    width: 100vw;
+    text-align: center;
+}
 
-/* span {
+.right .content {
+    width: 100vw;
+    text-align: center;
+    transform: translate(-50vw);
+}
+
+span {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 4vw;
+    font-size: 5vw;
     text-transform: uppercase;
     line-height: .8;
     transition: ease-out .6s;
-} */
+}

@@ -3,64 +3,85 @@ import { useState, useEffect, useRef } from 'react';
 const HeroAnimatedText = () => {
   const ref = useRef(null);
 
+  const [animatedText, setAnimatedText] = useState([]);
   const [slow, setSlow] = useState([]);
   const [fast, setFast] = useState([]);
   const [mouseX, setMouseX] = useState(0)
 
   useEffect(() => {
-    setSlow([...document.getElementsByClassName("slow")]);
+    setSlow([...document.getElementsByClassName("spanSlow")]);
     setFast([...document.getElementsByClassName("spanFast")]);
-
     ref.current.addEventListener("mousemove", (e) => {
-      console.log('my shit works', e.pageX);
-    })
+      // normalize mouse movement
+      console.log(e.pageX)
+      setMouseX(e.pageX)
+    });
 
-  }, [])
+  }, []);
 
-  const trackMousePostion = (e) => {
-    console.log("mouse here: ", e.pageX);
-    console.log("window width --> ", window.innerWidth)
-    setMouseX(e.pageX)
-    console.log('bitchin!', mouseX);
-  }
+  useEffect(() => {
 
-  const handleMouseMovement = (e) => {
+    // normalize mouse position
+    let normalizedPosition = mouseX / (window.innerWidth/2) - 1;
+    let speedSlow = 100 * normalizedPosition;
+    let speedFast = 200 * normalizedPosition;
 
-    let trial = document.getElementById("trial")
-    // let normalizedPosition = e.pageX / (window.innerWidth / 2) -1;
-    // let speedSlow = 100 * normalizedPosition;
-    // let speedFast = 200 * normalizedPosition;
-    // console.log(speedSlow, speedFast, normalizedPosition, slow);
 
-    // slow.forEach((element) => {
-    //   element.style.transform = `translateX(${speedSlow}px)`;
-    // });
+    for (let element of slow) {
+      element.style.transform = `translate(${speedSlow}px)`;
+    }
+    for (let element of fast) {
+      element.style.transform = `translate(${speedFast}px)`;
+    }
 
-    // fast.forEach((element) => {
-    //   element.style.transform = `translateX(${speedFast}px)`;
-    // });
-  }
+  }, [mouseX, fast, slow])
 
   return (
-    <div ref={ref} className="animated-text-wrapper">
-      <div className="line left">
-        <div className="content">
-          <span className="slow">Think</span>
+    <div className="hero-section">
+      <div ref={ref} className="animated-text-wrapper">
+        <div className="line">
+          <div className="left">
+            <div className="content">
+              <span className="spanSlow">experience</span>
+            </div>
+          </div><div className="right">
+            <div className="content">
+              <span className="spanSlow">experience</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="line right">
-        <div className="content">
-          <span className="spanSlow">Once</span>
+        <div className="line">
+          <div className="left">
+            <div className="content">
+              <span className="spanSlow">the flavor</span>
+            </div>
+          </div><div className="right">
+            <div className="content">
+              <span className="spanSlow">the flavor</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="line right">
-        <div className="content">
-          <span className="spanSlow">Twice</span>
+        <div className="line">
+          <div className="left">
+            <div className="content">
+              <span className="spanFast">you</span>
+            </div>
+          </div><div className="right">
+            <div className="content">
+              <span className="spanFast">you</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="line right">
-        <div className="content">
-          <span className="spanFast">Delicious</span>
+        <div className="line">
+          <div className="left">
+            <div className="content">
+              <span className="spanSlow">desire</span>
+            </div>
+          </div><div className="right">
+            <div className="content">
+              <span className="spanSlow">desire</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
