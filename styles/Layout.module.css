@@ -1,8 +1,11 @@
 .container {
-    border: solid 1px rgb(192, 37, 240);
+    border: solid 5px rgb(192, 37, 240);
     height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+    display: grid;
+    /*    */
+    /* flex-flow: column nowrap; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
 }

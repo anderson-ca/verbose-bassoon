@@ -1,7 +1,7 @@
-import styles from '../styles/HeroSection.module.css';
+import styles from '../styles/Hero.module.css';
 import { useState, useEffect, useRef } from 'react';
 
-const HeroSection = () => {
+const Hero = () => {
   const ref = useRef(null);
 
   const [slow, setSlow] = useState([]);
@@ -65,4 +65,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection;
+export default Hero;

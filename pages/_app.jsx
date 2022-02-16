@@ -3,13 +3,15 @@ import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WavesDivider from '../components/WavesDivider';
-import HeroSection from '../components/HeroSection';
+import Hero from '../components/Hero';
+import About from '../components/About';
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Navbar />
-      <HeroSection />
+      <Hero />
+      <About />
       <Component {...pageProps} />
       {/* <WavesDivider /> */}
       <Footer />
