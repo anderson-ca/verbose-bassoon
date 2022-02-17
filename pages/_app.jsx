@@ -12,6 +12,12 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <Hero />
       <About />
+      <Hero />
+      <About />
+      <Hero />
+      <About />
+      <Hero />
+      <About />
       <Component {...pageProps} />
       <WavesDivider />
       <Footer />
