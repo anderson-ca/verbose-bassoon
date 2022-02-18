@@ -1,4 +1,39 @@
 .hero_section {
-    /* background: rgba(255, 208, 0, 0.938); */
-    height: 500px;
+    /* border: solid 3px red; */
+    width: 100vw;
+    padding: 18vh 1rem 2rem 1rem;
+    background: var(--pink);
+    /* height: 100vh; */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.hero_image_wrapper {
+    /* border: solid 2px blue; */
+    /* height: 3rem; */
+    width: 16vw;
+    margin: 0;
+    padding: 0;
+}
+
+.hero_text_wrapper {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* svg divider styles */
+
+.waves_wrapper {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    width: 100vw;
+    /* height: 2vh; */
+    transform: rotate(180deg);
+    background: rgb(176, 236, 9);
+}
+
+.waves_wrapper .shape_fill {
+    fill: #E393B5;
 }

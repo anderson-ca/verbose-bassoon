@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
 :root {
     --font-size: 1.5rem;
     --link-color: #462044;
     --link-hover-color: #8C4088;
-    --primary-font: 'Dancing Script', cursive;
+    --primary-font: 'Yanone Kaffeesatz';
     --secondary-font: 'Anton', sans-serif;
     --tertiary-font: 'Shizuru', cursive;
     --dark-blue: #087996;
     --blue: #97eaff;
     --pink: #E791B7;
-    --white: rgb(217, 234, 238);
+    --white: #f5f5f5;
+    --black: #010101;
 }
 
 html {
@@ -62,12 +63,12 @@ ul {
 }
 
 a {
-    color: var(--dark-blue);
+    color: var(--black);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--pink);
+    color: var(--white);
 }
 
 .imageWrapper {
@@ -77,4 +78,18 @@ a:hover {
 }
 
 
-/* grid layout experimentation */
+/* svg divider styles */
+
+.waves-wrapper {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 2vh;
+    transform: rotate(180deg);
+    background: rgb(176, 236, 9);
+}
+
+.waves-wrapper .shape-fill {
+    fill: #E393B5;
+}

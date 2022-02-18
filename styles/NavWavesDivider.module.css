@@ -2,7 +2,7 @@
     width: 100vw;
     transform: rotate(180deg);
     z-index: 0;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
 
 .waves_wrapper .shape_fill {

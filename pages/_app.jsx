@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import NavWavesDivider from '../components/NavWavesDivider';
 import WavesDivider from '../components/WavesDivider';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -11,15 +12,10 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Navbar />
       <Hero />
-      <About />
-      <Hero />
-      <About />
-      <Hero />
-      <About />
-      <Hero />
+      {/* <NavWavesDivider /> */}
       <About />
       <Component {...pageProps} />
-      <WavesDivider />
+      {/* <WavesDivider /> */}
       <Footer />
     </Layout>
   )
